@@ -59,6 +59,12 @@ li {
     padding: 20px 5px;
 }
 
+.color-scheme-btn:active,
+.color-scheme-btn:hover,
+.color-scheme-btn:focus {
+    background-color: #64789744;
+}
+
 ul {
     display: flex;
 }
