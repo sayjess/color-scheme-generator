@@ -1,6 +1,5 @@
 const seedColorEl = document.getElementById('seed-color')
 const colorSchemeEl = document.getElementById('color-scheme')
-
 const colorSchemeBtnEl = document.getElementById('color-scheme-btn')
 let colorArray = []
 
@@ -17,13 +16,13 @@ function render() {
             data.colors.map(function(color){
                 colorArray.push(color.hex.value)
                 
-            })
+            }).join(' ')
         updateColorSchemeDisplay()
         })
 }
 
 function updateColorSchemeDisplay() {
-    console.log(colorArray);
+    // console.log(colorArray);
 
     const colorItems = document.querySelectorAll('.color-item');
 
@@ -36,8 +35,6 @@ function updateColorSchemeDisplay() {
             colorText.textContent = colorArray[index];
         }
     });
-
-    console.log('click');
 }
 
 
